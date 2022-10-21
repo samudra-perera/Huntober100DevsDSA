@@ -15,5 +15,5 @@ function cleanDay3Str(str, key) {
             str[i] = ' '
         }
     }
-    return str.join('')
+    return str.join(' ')
 }
