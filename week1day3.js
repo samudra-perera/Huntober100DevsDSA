@@ -15,5 +15,8 @@ function cleanDay3Str(str, key) {
             str[i] = ' '
         }
     }
-    return str.join(' ')
+    return str.join('')
 }
+
+let res = cleanDay3Str('e!!1gv)tSllt8cvbdeDHEdVw!00t1#Aa.2MDuLWYpP^VVjDch1SOiv#yl4gmQfs', realKey)
+//' !!1gv)t llt8 vbd DHEdVw!00t1#A .2MDuLWY P^VVjD h1 Oiv#yl4gmQfs'

@@ -9,3 +9,6 @@ function RemoveNthChar(str, n) {
     }
     return clean
 }
+
+RemoveNthChar('sfQmg4ly#viO 1h DjVV^P YWLuDM2. A#1t00!wVdEHD dbv 8tll t)vg1!! ', 3)
+//'sfmglyvi 1 DVVP WLDM. #100wVEH dv tl tvg!!'

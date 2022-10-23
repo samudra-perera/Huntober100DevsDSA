@@ -24,8 +24,9 @@ function decoder(str) {
 }
 
 //This is O(n) time complexity and it is o(1) space complexity
-
-decoder("PR0-T1P #hqB: 1T'5 N1C3 T0 5AY H3770.")
+decoder("e!!Igv)t5lltBcvbdeDH3dVw!OOtI#Aa.ZMDu7WYpP^VVjDc4I50iv#ylhgmQfs")
+// decoder("PR0-T1P #hqB: 1T'5 N1C3 T0 5AY H3770.")
+result = 'e!!1gv)tSllt8cvbdeDHEdVw!00t1#Aa.2MDuLWYpP^VVjDch1SOiv#yl4gmQfs'
 
 // Some of my web development skills include:
 // • Design: UI/UX, Figma/Adobe XD, Adobe Photoshop, Adobe Illustrator, SEO, and more.

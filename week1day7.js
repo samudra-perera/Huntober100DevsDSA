@@ -28,4 +28,4 @@ function flippaLetta(str) {
     return clean
 }
 
-flippaLetta('vCZNKOV: 0 MFNYVI LI KFMXGFZGRLM XSZMTVH')
+flippaLetta('sfmglyvi 1 DVVP WLDM. #100wVEH dv tl tvg!!')
