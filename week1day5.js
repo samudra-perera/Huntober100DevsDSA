@@ -20,13 +20,15 @@ function punParser(str) {
     if (checkLowercaseRequirements(str[i])) {
       continue;
     }
-
+    if (checkUppercaseRequirements(str[i])) {
+      continue;
+    }
     puns.push(str[i]);
   }
   return puns;
 }
 
-const example = "The Dog Boss, Whoops ,abcd,abcde,aa";
+const example = "The Dog Boss, Whoops ,abcd,abcde,aa,";
 
 //Helper functoions to deal with all the conditions
 const checkSpace = (str) => {
@@ -76,12 +78,22 @@ const checkLowercaseRequirements = (str) => {
 };
 
 const checkUppercaseRequirements = (str) => {
-    let uppercase = 0;
-    for(let i = 0; i < str.length; i++) {
-        if(str[i] >= 'A' && str[i] <= 'Z') uppercase++
-        if(str[i] == 'S') return true
-    }
-    return uppercase >= 2 ? false : true;
-}
+    //Checks to see if there is atleast 2 uppercase characters and to ensure that there is no Capital 'S'
+  let uppercase = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] >= "A" && str[i] <= "Z") uppercase++;
+    if (str[i] == "S") return true;
+  }
+  return uppercase >= 2 ? false : true;
+};
 
 punParser(example);
+
+
+let movies1 = "The Pawnight Show,Arrested Dogvelopment,Furiends,Mewie,Curb Your Dogthusiasm,Teenage Mewtant Ninja Turtles,Phineas and Purrb,Paw Trek, Paw Trek: The Next Mewination, Twin Mewks, *C*A*T*S*,DogTales, Game of Bones, House of the Meowgon,The Purrlight Zone,Breaking Bone,The Meowre,The Dogpranos,The Rings of Meower, The KIT Crowd,Strangepaw Things ,Catman: The Animeowted Series,Meowter Call Saul,Mewgerton ,Obark,Mewphoria,La Casa de Pawpel,Rick & Meowty,Amewican Purror Story, Mewcifer,PawndaVision,Dogxter,The Meowndalorian, Dog Lasso,Bark,Meowdern Pawmily , Meowtlander,Bone Mirror,Barks and Recreation,How to Get Away with Meowder,Boneland ,Meowther Ted,Mewtopia,Mewey,The Mewkie Meowse Doghouse,Mewster Rogers' Neighborhood"
+
+let movies2 = "Purrlandia ,Meowpardy, Meowstery Science Theater: Purrthousand, Amewican Idol,Dog City,Doctor Mew , The Meowing Fed,Mew Peter,The Vicar of Dogley, Kittens,Meownton Abbey,Pets and the Kitty,Dogis and Bonehead,Pawlty Meowers ,The Meowpet Show,Barkos,The Catbert Purrport,The Pawffice,The Dogford Files, Battlestar Catlactica,Catlumbo,SpongeDog Squarepants,NYPD Mew ,Fluffy the Meowpire Purrer,The Inbemewners,Meowder She Wrote,Paw & Order,30 Dog, Pawvatar: The Last Meowbender"
+
+let mov1 = punParser(movies1)
+let mov2 = punParser(movies2)
+
