@@ -27,8 +27,8 @@ const moveLeft = (arr, elem) => {
     //check if element is first elem ...cannot move any further
     if(arr.indexOf(elem) == 0) return arr 
     
-    indexElem = arr.indexOf(elem)
-    elemLeft = arr[indexElem - 1]   //Storing the element to the left of the target element
+    let indexElem = arr.indexOf(elem)
+    let elemLeft = arr[indexElem - 1]   //Storing the element to the left of the target element
     arr[indexElem] = elemLeft   //Swapping the left Element with the target Element
     arr[indexElem - 1] = elem   //Reassigning the left index to the target element
     return arr
@@ -38,8 +38,8 @@ const moveRight = (arr, elem) => {
     //Check if element is the last element..cannot move right any further
     if(arr.indexOf(elem) == arr.length - 1) return arr
 
-    indexElem = arr.indexOf(elem)
-    elemRight = arr[indexElem + 1] // Storing the element to the right
+    let indexElem = arr.indexOf(elem)
+    let elemRight = arr[indexElem + 1] // Storing the element to the right
     arr[indexElem] = elemRight
     arr[indexElem + 1] = elem
     return arr
